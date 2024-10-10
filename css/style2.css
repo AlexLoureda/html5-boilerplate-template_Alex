@@ -1,0 +1,135 @@
+.header, .footer {
+    padding: 1% 2%;
+}
+
+.header {
+    color: white;
+    background: #2c3e50;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer {
+    color: black;
+    background: #92c5f9;
+    font-size: 15px;
+    text-align: left;
+    align-items: flex-end; /* This won't have any effect without display: flex; */
+}
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #76a6d6;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.buttons:hover {
+    background-color: #3498db;
+}
+
+.buttons:hover a {
+    color: white;
+}
+
+.seccio {
+    border: 1px solid black;
+    margin: 10px 10%;
+}
+
+.caixaP {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.caixes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
+}
+
+.caixa {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 350px;
+    margin: 5px;
+}
+
+.info, .infoProj {
+    flex: 1;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.infoProj {
+    padding: 5%;
+    border: 1px solid black;
+}
+
+.img-cont {
+    flex: 1;
+    text-align: center;
+}
+
+.imgPerfil, .imgProj {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.imgPerfil {
+    max-width: 350px;
+}
+
+.imgProj {
+    max-width: 250px;
+}
+
+@media screen and (max-width: 600px) {
+    .caixaP {
+        flex-direction: column;
+    }
+
+    .caixa {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .imgPerfil {
+        max-width: 200px;
+    }
+
+    .imgProj {
+        max-width: 150px;
+    }
+
+    .buttons {
+        margin: 0 5px;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+}
